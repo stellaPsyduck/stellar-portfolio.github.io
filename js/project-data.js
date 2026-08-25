@@ -1,29 +1,29 @@
 window.PROJECTS = [
-  {
-    number: "03",
-    accent: "coral",
-    category: "Robotics",
-    type: "Team leadership · Systems coordination",
-    year: "2024—26",
+   {
+    number: "01",
+    accent: "pink",
+    category: "Creative",
+    type: "Marketing · Businesss",
+    year: "2025-26",
 
-    title: "Leading the messy middle of a competition robotics team",
+    title: "Using creativity to fundraise for the team.",
 
     summary:
-      "Two years as President of the University of Guelph Robotics Team, coordinating technical work, field readiness, outreach, logistics, and the humans behind all of it.",
+      "I designed blind box figurines relevant to my university's student life to fundraise for the robotics team.",
 
     outcome:
-      "Connected mechanical, electrical, firmware, and software work into shared priorities—especially when the rover, schedule, and shipping crate all disagreed.",
+      "Helped raise about 1k. And, created a fundraiser can be repeated and built upon in future years.",
 
     tags: [
-      "Leadership",
-      "Systems thinking",
-      "Operations",
-      "Documentation"
+      "Design",
+      "Creativity",
+      "Marketing",
+      "Fundraising"
     ],
 
-    footer: "people + machines",
+    footer: "gatcha games",
 
-    page: "projects/robotics-leadership.html"
+    page: "projects/lil-gryphie.html"
   },
 
   {

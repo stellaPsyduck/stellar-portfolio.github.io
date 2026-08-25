@@ -3,32 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Computer science, statistics, explainable AI, robotics, and embedded-systems work by Stella Rovazzi.">
+    <meta name="description" content="Computer science, statistics, explainable AI, robotics, and embedded-systems project by Stella Rovazzi.">
     <meta property="og:title" content="Stella Rovazzi — STEM Portfolio">
-    <meta property="og:description" content="Computer Science · Statistics · Robotics — selected research, software, and embedded-systems work.">
+    <meta property="og:description" content="Computer Science · Statistics · Robotics — selected research, software, and embedded-systems project.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="og.png">
+    <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png">
     <title>Stella Rovazzi — STEM Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
     <!-- These are just so I can have the project data stored elsewhere -->
     <script src="js/project-data.js" defer></script>
-  <script src="js/portfolio.js" defer></script>
+    <script src="js/work-data.js" defer></script>
+
+    <script src="js/portfolio.js" defer></script>
+    <script src="js/work.js" defer></script>
   </head>
 
   <body>
-    <main class="site-shell" data-theme="ink">
-      <a class="skip-link" href="#work">Skip to selected work</a>
+    <main class="site-shell" data-theme="paper">
+      <a class="skip-link" href="#projects">Skip to selected project</a>
 
       <header class="topbar">
         <a class="wordmark" href="#top" aria-label="Stella Rovazzi, home">
           <span class="wordmark-mark">SR</span>
-          <span>fieldnotes<span class="wordmark-dot">.</span>txt</span>
+          <span>stellar-portfolio<span class="wordmark-dot">.</span>txt</span>
         </a>
 
         <nav class="topnav" aria-label="Primary navigation">
-          <a href="#work">work</a>
+          <a href="#projects">projects</a>
           <a href="#about">about</a>
+          <a href="#experience">experience</a>
           <a href="#contact">contact</a>
           <button class="theme-switch" id="theme-switch" type="button" aria-label="Switch to light theme">
             <span id="theme-icon" aria-hidden="true">◐</span>
@@ -66,7 +71,7 @@
               </div>
               <div>
                 <dt>curious about</dt>
-                <dd>Operations Research · Embedded Systems · AI</dd>
+                <dd> Robotics · AI · Statistics</dd>
               </div>
             </dl>
 
@@ -80,17 +85,18 @@
             <p class="handwritten">currently thinking about</p>
             <p>
               How to make complex systems more understandable—whether the
-              system is a neural network, a motor controller, or a team.
+              system is a neural netproject, a motor controller, or a team.
             </p>
           </div> -->
 
           <!-- <div class="tiny-links" aria-label="Page shortcuts">
-            <a href="#work">01 / selected work</a>
-            <a href="#about">02 / about + skills</a>
+            <a href="#projects">01 / selected projects</a>
+            <a href="#about">02 / experience</a>
             <a href="#contact">03 / say hello</a>
           </div> -->
         </aside>
 
+        
         <section class="feed" aria-label="Portfolio feed">
           <article class="post intro-post">
             <div class="post-rail">
@@ -102,13 +108,14 @@
                 <span>stella-ro.vz</span>
                 <span>pinned post</span>
               </div>
-              <p class="kicker">A portfolio in field notes</p>
-              <h2>I like problems that refuse to stay in one discipline.</h2>
+              <p class="kicker">A portfolio in learning</p>
+              <h2>Documenting my Learning</h2>
               <p class="intro-copy">
-                My work moves between statistical experiments, low-level
-                firmware, and technical leadership. I care about evidence,
-                clear communication, and the satisfying moment when a system
-                finally behaves the way you thought it would.
+                Alongside presenting my experience and skills for job opportunities,
+                I’m using this website to reflect on what I’ve accomplished and learned.
+                My education and work experience don’t follow a straight path, but I’ve
+                 learned a lot at each stage. I hope my excitement for each part of my life comes through!
+
               </p>
               <div class="intro-stats" aria-label="Quick facts">
                 <div><strong>02</strong><span>years leading robotics</span></div>
@@ -118,159 +125,42 @@
               <div class="post-actions" aria-hidden="true">
                 <span># interdisciplinary</span>
                 <span># build → test → explain</span>
+                <span># curiosity</span>
                 <span class="action-symbols">↻ ♡</span>
               </div>
             </div>
           </article>
 
-          <section class="work-section" id="work" aria-labelledby="work-title">
+          
+          <section class="project-section" id="projects" aria-labelledby="project-title">
             <div class="section-heading">
               <div>
-                <p class="section-index">01 / SELECTED WORK</p>
-                <h2 id="work-title">Project archive</h2>
+                <p class="section-index">01 / SELECTED PROJECTS</p>
+                <h2 id="project-title">Project archive</h2>
               </div>
               <span class="archive-count" id="archive-count">04 posts</span>
             </div>
 
             <div class="filters" role="group" aria-label="Filter projects">
               <button type="button" class="active" data-filter="All" aria-pressed="true">All</button>
-              <button type="button" data-filter="Research" aria-pressed="false">Research</button>
               <button type="button" data-filter="Robotics" aria-pressed="false">Robotics</button>
+              <button type="button" data-filter="Statistics" aria-pressed="false">Statistics</button>
               <button type="button" data-filter="Software" aria-pressed="false">Software</button>
+              <button type="button" data-filter="Creative" aria-pressed="false">Creative</button>
             </div>
 
-            <div class="project-list" id="project-list" aria-live="polite">
-              <article class="post project-post" data-category="Research">
-                <div class="post-rail">
-                  <span class="number-stamp cobalt">01</span>
-                  <span class="rail-line"></span>
-                </div>
-                <div class="post-body">
-                  <div class="post-meta">
-                    <span>Independent research · Explainable AI</span>
-                    <span>2026</span>
-                  </div>
-                  <span class="project-label cobalt">Research</span>
-                  <h3>How perturbations change the story LIME tells</h3>
-                  <p class="project-summary">
-                    A controlled comparison of Gaussian, Latin hypercube,
-                    reduction, and replacement-based perturbations—measuring
-                    how each choice changes local explanations.
-                  </p>
-                  <div class="outcome-block">
-                    <span>what I did</span>
-                    <p>Built a repeatable evaluation pipeline spanning fidelity, infidelity, sensitivity, stability, and attribution agreement across neural-network and tree baselines.</p>
-                  </div>
-                  <ul class="tag-list" aria-label="XAI project skills">
-                    <li>#Python</li><li>#PyTorch</li><li>#LIME</li><li>#Statistics</li><li>#Experiment design</li>
-                  </ul>
-                  <div class="post-actions">
-                    <span>research log 01</span>
-                    <span class="action-symbols" aria-hidden="true">↻ ♡</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="post project-post" data-category="Robotics">
-                <div class="post-rail">
-                  <span class="number-stamp lime">02</span>
-                  <span class="rail-line"></span>
-                </div>
-                <div class="post-body">
-                  <div class="post-meta">
-                    <span>University of Guelph Robotics Team · Embedded systems</span>
-                    <span>2026</span>
-                  </div>
-                  <span class="project-label lime">Robotics</span>
-                  <h3>Teaching a rover motor controller to start, listen, and recover</h3>
-                  <p class="project-summary">
-                    STM32 firmware for brushless motor control over CAN,
-                    developed through bench testing, fault diagnosis, and
-                    careful iteration on real hardware.
-                  </p>
-                  <div class="outcome-block">
-                    <span>what I did</span>
-                    <p>Worked through speed-feedback faults, Hall-sensor configuration, startup ramps, state transitions, bus termination, and telemetry on a competition rover platform.</p>
-                  </div>
-                  <ul class="tag-list" aria-label="Rover firmware skills">
-                    <li>#C</li><li>#STM32</li><li>#CAN bus</li><li>#Motor control</li><li>#Hardware debugging</li>
-                  </ul>
-                  <div class="post-actions">
-                    <span>field note 08</span>
-                    <span class="action-symbols" aria-hidden="true">↻ ♡</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="post project-post" data-category="Robotics">
-                <div class="post-rail">
-                  <span class="number-stamp coral">03</span>
-                  <span class="rail-line"></span>
-                </div>
-                <div class="post-body">
-                  <div class="post-meta">
-                    <span>Team leadership · Systems coordination</span>
-                    <span>2024—26</span>
-                  </div>
-                  <span class="project-label coral">Robotics</span>
-                  <h3>Leading the messy middle of a competition robotics team</h3>
-                  <p class="project-summary">
-                    Two years as President of the University of Guelph Robotics
-                    Team, coordinating technical work, field readiness,
-                    outreach, logistics, and the humans behind all of it.
-                  </p>
-                  <div class="outcome-block">
-                    <span>what I did</span>
-                    <p>Connected mechanical, electrical, firmware, and software work into shared priorities—especially when the rover, schedule, and shipping crate all disagreed.</p>
-                  </div>
-                  <ul class="tag-list" aria-label="Leadership project skills">
-                    <li>#Leadership</li><li>#Systems thinking</li><li>#Operations</li><li>#Documentation</li>
-                  </ul>
-                  <div class="post-actions">
-                    <span>people + machines</span>
-                    <span class="action-symbols" aria-hidden="true">↻ ♡</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="post project-post" data-category="Software">
-                <div class="post-rail">
-                  <span class="number-stamp violet">04</span>
-                  <span class="rail-line"></span>
-                </div>
-                <div class="post-body">
-                  <div class="post-meta">
-                    <span>Software systems · Personal project</span>
-                    <span>2025</span>
-                  </div>
-                  <span class="project-label violet">Software</span>
-                  <h3>A tiny terminal habit tracker with a surprisingly serious test suite</h3>
-                  <p class="project-summary">
-                    A modular C application for creating, categorizing,
-                    archiving, and tracking habits from the terminal, with
-                    persistence and tree-based organization.
-                  </p>
-                  <div class="outcome-block">
-                    <span>what I did</span>
-                    <p>Designed the model/controller boundaries and finished with 21 checks passing—proof that even a small tool deserves dependable behavior.</p>
-                  </div>
-                  <ul class="tag-list" aria-label="Habit tracker skills">
-                    <li>#C</li><li>#Testing</li><li>#Data structures</li><li>#CLI design</li>
-                  </ul>
-                  <div class="post-actions">
-                    <span>21 / 21 checks</span>
-                    <span class="action-symbols" aria-hidden="true">↻ ♡</span>
-                  </div>
-                </div>
-              </article>
-            </div>
+            <div
+                class="project-list"
+                id="project-list"
+                aria-live="polite"
+              ></div>
           </section>
 
-          <section class="about-section" id="about" aria-labelledby="about-title">
+            <section class="about-section" id="about" aria-labelledby="about-title">
             <div class="section-heading">
               <div>
                 <p class="section-index">02 / ABOUT + SKILLS</p>
-                <h2 id="about-title">A generalist, on purpose.</h2>
+                <h2 id="about-title">A summary of skills.</h2>
               </div>
             </div>
 
@@ -312,7 +202,7 @@
                   </div>
                 </div>
 
-                <div class="timeline" aria-label="Education and leadership timeline">
+                <!-- <div class="timeline" aria-label="Education and leadership timeline">
                   <div>
                     <time>Now</time>
                     <p><strong>Physical Sciences</strong><span>University of Guelph · CS + Statistics focus</span></p>
@@ -323,28 +213,85 @@
                   </div>
                   <div>
                     <time>Next</time>
-                    <p><strong>Evidence-led work</strong><span>Data, OR, software, or embedded-adjacent</span></p>
+                    <p><strong>Evidence-led project</strong><span>Data, OR, software, or embedded-adjacent</span></p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </article>
           </section>
 
+        <section
+          class="experience-section"
+          id="experience"
+          aria-labelledby="experience-title"
+        >
+          <div class="section-heading">
+            <div>
+              <p class="section-index">03 / EXPERIENCE</p>
+              <h2 id="experience-title">My experience and work.</h2>
+            </div>
+
+            <span class="archive-count" id="experience-count">
+              00 roles
+            </span>
+          </div>
+
+          <!-- work.js inserts the timeline entries here -->
+          <div
+            class="work-timeline"
+            id="work-timeline"
+            aria-live="polite"
+          ></div>
+
+          <!--  This is for when I need to make it actually look like i did things -->
+          <!-- <a
+            class="work-entry work-entry--archive"
+            href="archived-experience.html"
+          >
+            <div class="work-entry__rail">
+              <span
+                class="work-entry__marker cobalt"
+                aria-hidden="true"
+                        ></span>
+            </div>
+
+        <div class="work-entry__card archive-card">
+          <div>
+            <span class="archive-card__eyebrow">
+              Earlier roles
+            </span>
+
+            <h3>Archived experience</h3>
+          </div>
+
+          <span class="archive-card__arrow" aria-hidden="true">
+            ↗
+          </span>
+        </div>
+        </a> -->
+        </section>
+
           <section class="contact-section" id="contact" aria-labelledby="contact-title">
             <div class="contact-tape" aria-hidden="true">AVAILABLE FOR CONVERSATIONS</div>
-            <p class="section-index">03 / SAY HELLO</p>
-            <h2 id="contact-title">Have a complicated problem with good people attached?</h2>
+            <p class="section-index">04 / SAY HELLO</p>
+            <h2 id="contact-title">Don't be a stranger, just reach out and ask me any questions!</h2>
             <p>
-              I’m interested in new-grad opportunities where curiosity,
-              technical range, and careful analysis are useful—not merely nice
-              to have.
+              I’m interested in new-grad opportunities in data science or software development.
             </p>
             <div class="contact-actions">
               <a href="mailto:srovazzi@uoguelph.ca?subject=Portfolio%20conversation">
                 Email me <span aria-hidden="true">↗</span>
               </a>
-              <span>Contact address is ready for your final email.</span>
+              
+              <a href="https://www.linkedin.com/in/stella-rovazzi/">
+                Find Me on Linkedin <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="https://github.com/stellaPsyduck/">
+                Check Out my Github <span aria-hidden="true">↗</span>
+              </a>
             </div>
+
           </section>
 
           <footer>

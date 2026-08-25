@@ -865,3 +865,35 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-image__number {
+  position: absolute;
+  z-index: 2;
+
+  left: 50%;
+  bottom: 0;
+
+  display: grid;
+  place-items: center;
+
+  width: 52px;
+  height: 52px;
+
+  background: var(--project-accent);
+  color: white;
+
+  font: 700 0.75rem "Courier New", monospace;
+
+  box-shadow: 4px 4px 0 var(--lime);
+  transform: translate(-50%, 50%) rotate(3deg);
+}

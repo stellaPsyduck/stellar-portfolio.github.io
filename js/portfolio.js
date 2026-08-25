@@ -72,14 +72,43 @@ function renderProjects(filter = "All") {
           (project) => project.category === filter
         );
 
-  projectList.innerHTML = visibleProjects
-    .map(projectCard)
-    .join("");
+  if (visibleProjects.length === 0) {
+    projectList.innerHTML = `
+      <article class="post empty-project-post">
+        <div class="post-rail">
+          <span class="number-stamp lime">?</span>
+          <span class="rail-line"></span>
+        </div>
 
-  if (archiveCount) {
-    archiveCount.textContent =
-      `${String(visibleProjects.length).padStart(2, "0")} posts`;
+        <div class="post-body">
+          <span class="project-label lime">
+            ${filter === "All" ? "Projects" : filter}
+          </span>
+
+          <h3>In the works.</h3>
+
+          <p class="project-summary">
+            New ${filter === "All" ? "projects are" : `${filter.toLowerCase()} projects are`}
+            currently being documented. Check back soon.
+          </p>
+
+          <div class="post-actions">
+            <span>draft saved</span>
+            <span class="action-symbols" aria-hidden="true">
+              ↻ ♡
+            </span>
+          </div>
+        </div>
+      </article>
+    `;
+  } else {
+    projectList.innerHTML = visibleProjects
+      .map(projectCard)
+      .join("");
   }
+
+  archiveCount.textContent =
+    `${String(visibleProjects.length).padStart(2, "0")} posts`;
 }
 
 filterButtons.forEach((button) => {
