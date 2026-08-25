@@ -27,29 +27,111 @@ window.PROJECTS = [
   },
 
   {
-    number: "04",
-    accent: "violet",
+    number: "02",
+    accent: "coral",
     category: "Software",
-    type: "Software systems · Personal project",
-    year: "2025",
+    type: "Personal Project",
+    year: "2026",
 
     title:
-      "A tiny terminal habit tracker with a surprisingly serious test suite",
+      "Optimizing hosts' workflow at a restaurant.",
 
     summary:
-      "A modular C application for creating, categorizing, archiving, and tracking habits from the terminal, with persistence and tree-based organization.",
-
-    outcome:
-      "Designed the model/controller boundaries and finished with 21 checks passing—proof that even a small tool deserves dependable behavior.",
-
+      "After working as a host, I realized all the choices we had to make were mainly algorithmic -- with some on the fly decisions. I implemented a pen and paper alternative to help the workflow of the hosts and later decided to turn it into a software.",
+     outcome:
+      "An application (computer or mobile) to use while working as a host to support making informed decisions about table assignment.",
     tags: [
-      "C",
-      "Testing",
-      "Data structures",
-      "CLI design"
+      "Flutter",
+      "Dart",
+      "Work Flow Optmization",
     ],
 
-    footer: "21 / 21 checks",
+    footer: "restaurants are all algorithms",
+
+    page: "projects/habit-tracker.html"
+  },
+
+    {
+    number: "03",
+    accent: "violet",
+    category: "Statistics",
+    type: "Undergraduate Thesis · Research",
+    year: "2026",
+
+    title:
+      "Exploring perturbations in Explainable AI (XAI).",
+
+    summary:
+      "Developed, reserach, and completed a thesis outlining the applications and impacts of various perturbation techniques for tabular data in explainable techniques and metrics",
+
+    outcome:
+      "Completed a paper that shows the choice of perturbation technique is not neutral. Selecting an unsuitable perturbation method can force or produce misleading results.",
+
+    tags: [
+      "Python",
+      "Pandas",
+      "PyTorch",
+      "Sci-kit Learn",
+      "Numpy"
+    ],
+
+    footer: "Fitting models",
+
+    page: "projects/habit-tracker.html"
+  },
+
+  {
+    number: "04",
+    accent: "coral",
+    category: "Software",
+    type: "Operations Research",
+    year: "2026",
+
+    title:
+      "Case study: ---. Building my skills in operations research.",
+
+    summary:
+      "Supported the firmware and electrical team in building and communicating through the CANBUS harness.",
+
+    outcome:
+      "A working CANBUS on our 2026 rover named Joel.",
+
+    tags: [
+      "CANBUS",
+      "CANgaroo",
+      "STM32",
+      "Soldering",
+    ],
+
+    footer: "I dislike touching flux",
+
+    page: "projects/habit-tracker.html"
+  },
+
+  {
+    number: "05",
+    accent: "cobalt",
+    category: "Robotics",
+    type: "Firmware",
+    year: "2026",
+
+    title:
+      "Learning about CANBUS and making mistakes.",
+
+    summary:
+      "Supported the firmware and electrical team in building and communicating through the CANBUS harness.",
+
+    outcome:
+      "A working CANBUS on our 2026 rover named Joel.",
+
+    tags: [
+      "CANBUS",
+      "CANgaroo",
+      "STM32",
+      "Soldering",
+    ],
+
+    footer: "I dislike touching flux",
 
     page: "projects/habit-tracker.html"
   }

@@ -175,14 +175,14 @@ button { color: inherit; }
 .filters button { border: 1px solid var(--rule); background: transparent; padding: 0.6rem 0.85rem; color: var(--soft-text); cursor: pointer; font: 0.66rem "Courier New", monospace; text-transform: uppercase; letter-spacing: 0.08em; }
 .filters button:hover, .filters button:focus-visible { border-color: var(--rule-strong); color: var(--text); }
 .filters button.active { border-color: var(--lime); background: var(--lime); color: var(--ink); }
-.number-stamp.cobalt { color: white; background: var(--cobalt); }
+.number-stamp.cobalt { color: var(--ink); background: var(--cobalt); }
 .number-stamp.lime { color: var(--ink); background: var(--lime); }
 .number-stamp.coral { color: var(--ink); background: var(--coral); }
 .number-stamp.violet { color: var(--ink); background: var(--violet); }
 .project-post .post-body { padding: clamp(1.4rem, 3vw, 2.2rem); }
 .project-post[hidden] { display: none; }
 .project-label { display: inline-block; margin-top: 2rem; padding: 0.35rem 0.5rem; color: var(--ink); font: 700 0.62rem "Courier New", monospace; text-transform: uppercase; letter-spacing: 0.08em; transform: rotate(-1deg); }
-.project-label.cobalt { color: white; background: var(--cobalt); }
+.project-label.cobalt {background: var(--cobalt); }
 .project-label.lime { background: var(--lime); }
 .project-label.coral { background: var(--coral); }
 .project-label.violet { background: var(--violet); }
