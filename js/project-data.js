@@ -12,7 +12,7 @@ window.PROJECTS = [
       "I designed blind box figurines relevant to my university's student life to fundraise for the robotics team.",
 
     outcome:
-      "Helped raise about 1k. And, created a fundraiser can be repeated and built upon in future years.",
+      "Helped raise about 1k and created a fundraiser can be repeated and expanded in future years.",
 
     tags: [
       "Design",
@@ -134,5 +134,61 @@ window.PROJECTS = [
     footer: "I dislike touching flux",
 
     page: "projects/habit-tracker.html"
-  }
+  },
+
+    {
+    number: "06",
+    accent: "cobalt",
+    category: "Robotics",
+    type: "Electrical",
+    year: "2026",
+
+    title:
+      "All hands on deck for BLDCs",
+
+    summary:
+      "Supported the firmware and electrical team in building and communicating through the CANBUS harness.",
+
+    outcome:
+      "A working CANBUS on our 2026 rover named Joel.",
+
+    tags: [
+      "CANBUS",
+      "CANgaroo",
+      "STM32",
+      "Soldering",
+    ],
+
+    footer: "I dislike touching flux",
+
+    page: "projects/habit-tracker.html"
+  },
+
+    {
+    number: "07",
+    accent: "cobalt",
+    category: "Robotics",
+    type: "Firmware",
+    year: "2026",
+
+    title:
+      "Helping encode the steering motors.",
+
+    summary:
+      "Supported the firmware and electrical team in building and communicating through the CANBUS harness.",
+
+    outcome:
+      "A working CANBUS on our 2026 rover named Joel.",
+
+    tags: [
+      "CANBUS",
+      "CANgaroo",
+      "STM32",
+      "Soldering",
+    ],
+
+    footer: "I dislike touching flux",
+
+    page: "projects/habit-tracker.html"
+  },
 ];

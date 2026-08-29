@@ -1,310 +1,428 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- EDIT: Browser and sharing information. -->
-    <title>Lil Gryphies — Stella Rovazzi</title>
-    <meta name="description" content="A one-sentence description of this project.">
-    <meta property="og:title" content="Project Title — Stella Rovazzi">
-    <meta property="og:description" content="A one-sentence description of this project.">
-    <meta property="og:type" content="article">
-    <!-- Optional when hosted: <meta property="og:image" content="https://your-site.com/images/project-cover.jpg"> -->
-    <link rel="icon" href="../images/logo.png" sizes="16x16" type="image/png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../css/project-post.css">
-    <script src="../js/project-post.js" defer></script>
-  </head>
+  <!-- EDIT: Browser and sharing information. -->
+  <title>Lil Gryphies — Stella Rovazzi</title>
+  <meta name="description" content="A one-sentence description of this project.">
+  <meta property="og:title" content="Project Title — Stella Rovazzi">
+  <meta property="og:description" content="A one-sentence description of this project.">
+  <meta property="og:type" content="article">
+  <!-- Optional when hosted: <meta property="og:image" content="https://your-site.com/images/project-cover.jpg"> -->
+  <link rel="icon" href="../images/logo.png" sizes="16x16" type="image/png">
 
-  <!--
+  <link rel="stylesheet" href="../css/project-post.css">
+  <script src="../js/project-post.js" defer></script>
+</head>
+
+<!--
     EDIT: Change the accent per project with one hex colour.
     Good examples: #4068ff (blue), #ff715b (coral), #b8a2ff (violet).
   -->
-  <body style="--project-accent: #4068ff;">
-    <div class="reading-progress" aria-hidden="true">
-      <span id="reading-progress-bar"></span>
-    </div>
 
-    <header class="site-header">
-      <!-- EDIT: Change href to the location of your portfolio homepage. -->
-      <a class="site-brand" href="index.html" aria-label="Back to Stella Rovazzi portfolio">
-        <span class="site-brand__mark">SR</span>
-        <span>stellar-portfolio<span class="accent-dot">.</span>txt</span>
-      </a>
+<body style="--project-accent: #4068ff;">
+  <div class="reading-progress" aria-hidden="true">
+    <span id="reading-progress-bar"></span>
+  </div>
 
-      <nav class="site-nav" aria-label="Project page navigation">
-        <a href="../index.html">home</a>
-        <a href="#project-start">top</a>
-        <a href="#reflection">reflection</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
-          <span id="theme-icon" aria-hidden="true">◐</span>
-          <span id="theme-label">paper</span>
-        </button>
+  <header class="site-header">
+    <!-- EDIT: Change href to the location of your portfolio homepage. -->
+    <a class="site-brand" href="index.html" aria-label="Back to Stella Rovazzi portfolio">
+      <span class="site-brand__mark">SR</span>
+      <span>stellar-portfolio<span class="accent-dot">.</span>txt</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Project page navigation">
+      <a href="../index.html">home</a>
+      <a href="#project-start">top</a>
+      <a href="#reflection">reflection</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+        <span id="theme-icon" aria-hidden="true">◐</span>
+        <span id="theme-label">paper</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="page-shell" id="project-start">
+    <aside class="post-sidebar" aria-label="Project post information">
+      <div class="author-block">
+        <span class="author-avatar" aria-hidden="true">SR</span>
+        <div>
+          <strong>stella-ro.vz</strong>
+          <span>original project</span>
+        </div>
+      </div>
+
+      <nav class="post-contents" aria-label="On this page">
+        <p>on this page</p>
+        <a href="#overview">01 / overview</a>
+        <a href="#process">02 / process</a>
+        <a href="#outcome">03 / outcome</a>
+        <a href="#reflection">04 / reflection</a>
       </nav>
-    </header>
 
-    <main class="page-shell" id="project-start">
-      <aside class="post-sidebar" aria-label="Project post information">
-        <div class="author-block">
-          <span class="author-avatar" aria-hidden="true">SR</span>
-          <div>
-            <strong>stella-ro.vz</strong>
-            <span>original project</span>
-          </div>
+      <div class="sidebar-note">
+        <span>currently thinking about</span>
+        <!-- EDIT: One interesting question raised by this project. -->
+        <p>What will the future executives make with this idea?</p>
+      </div>
+    </aside>
+
+    <article class="tumblr-post">
+      <header class="post-header">
+        <div class="post-kicker">
+          <!-- EDIT: Project category, date, and approximate reading time. -->
+          <span>Robotics</span>
+          <span>2025 to Present</span>
+          <span>5 min read</span>
         </div>
 
-        <nav class="post-contents" aria-label="On this page">
-          <p>on this page</p>
-          <a href="#overview">01 / overview</a>
-          <a href="#process">02 / process</a>
-          <a href="#outcome">03 / outcome</a>
-          <a href="#reflection">04 / reflection</a>
-        </nav>
+        <!-- EDIT: Main project title and short positioning statement. -->
+        <p class="post-type">case study / 01</p>
+        <h1>Using creativity to fundraise for the team.</h1>
+        <p class="post-deck">
+          Designed and lead the development of 3D printed toys (inspired by Simiski) to fundraise for the
+          robotics team. All fundraising money goes to supporting students in attending competition.
+        </p>
 
-        <div class="sidebar-note">
-          <span>currently thinking about</span>
-          <!-- EDIT: One interesting question raised by this project. -->
-          <p>What will the future executives make with this idea?</p>
+        <ul class="tag-list" aria-label="Project tags">
+          <!-- EDIT: Duplicate or remove tags as needed. -->
+          <li>#Design</li>
+          <li>#Collaboration</li>
+          <li>#Process Optimization</li>
+        </ul>
+      </header>
+
+      <!-- OPTIONAL COMPONENT: Replace this placeholder with an image. -->
+      <figure class="post-media post-media--hero">
+        <div class="project-image">
+
+          <img src="../images/lil_gryphie/squad.jpg" alt="Four Lil Gryphons in various poses">
+          <span class="project-image__number" aria-hidden="true">
+            01
+          </span>
         </div>
-      </aside>
+        <figcaption>A picture of some Lil Gryphies at GHD !</figcaption>
+      </figure>
 
-      <article class="tumblr-post">
-        <header class="post-header">
-          <div class="post-kicker">
-            <!-- EDIT: Project category, date, and approximate reading time. -->
-            <span>Robotics</span>
-            <span>2025 to Present</span>
-            <span>5 min read</span>
+      <!-- COMPONENT: At-a-glance facts. Keep two to four items. -->
+      <dl class="fact-grid">
+        <div>
+          <dt>role</dt>
+          <dd>Designer and Lead</dd>
+        </div>
+        <div>
+          <dt>timeline</dt>
+          <dd>1.5 Years</dd>
+        </div>
+        <div>
+          <dt>tools</dt>
+          <dd>Collaboration · Design · Marketing</dd>
+        </div>
+        <div>
+          <dt>status</dt>
+          <dd>Complete (for me)</dd>
+        </div>
+      </dl>
+
+      <section class="post-section" id="overview">
+        <div class="section-label">
+          <span>01</span>
+          <p>Overview</p>
+        </div>
+        <div class="section-content">
+          <h2>Introducing Lil Gryphie</h2>
+          <!-- EDIT: Two or three short paragraphs are easier to scan than one long block. -->
+          <p class="lead">
+            After running a few bake sales, and seeing other clubs do the same, I wanted a robotics-special fundraiser
+            that would create excitement on campus.
+          </p>
+          <p>
+            A Lil Gryphie is a 3D-printed gotcha box or blind box toy I designed to fundraise for my robotics team. All
+            the money made goes to financially supporting students in attending competition. I wanted the team to feel
+            accessible to everyone, so fundraising and sponsorships was among our top priorities.
+            Alongside being excited about the successful fundraiser, I had a lot of fun optimizing our development, toy
+            creation, and packaging processes.
+          </p>
+        </div>
+      </section>
+
+      <!-- OPTIONAL COMPONENT: A highlighted research or design question. -->
+      <blockquote class="pull-quote">
+        <span>the question</span>
+        <p>“Can we creatively fundraise for competition?”</p>
+      </blockquote>
+
+      <section class="post-section" id="process">
+        <div class="section-label">
+          <span>02</span>
+          <p>Process</p>
+        </div>
+        <div class="section-content">
+          <h2>How I approached it</h2>
+
+          <!-- COMPONENT: Numbered process. Duplicate or remove steps. -->
+          <ol class="process-list">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Understand</h3>
+                <p>
+                  After looking into Simiskis, I designed six poses for a cartoonish gryphon, inspired by student life.
+                  I tried making his globular body in SolidWorks, but the software didn't easily support modelling
+                  non-geometric shapes. Instead, we reached out to Hunter Marshall, a student (now a graduate) from
+                  Ontario Tech’s Game Development and Interactive Media program. We went back and forth a few times on
+                  how to make the gryphon as cute and realistic as possible for 3D printing. One of our mechanical leads
+                  at the time, Jacob Gomes, gave us advice on 3D printing. After we perfected the body, Hunter modelled
+                  the designed poses in Blender, and Jacob started test printing them.
+                </p>
+                <div class="step-gallery">
+                  <figure class="step-photo step-photo--wide">
+                    <div class="step-photo__frame" data-number="01">
+                      <img src="../images/lil_gryphie/og_sketch-opy.jpg"
+                        alt="Early sketches showing six student-inspired gryphon poses">
+                    </div>
+
+                    <figcaption>
+                      <strong>Initial concepts</strong>
+                      Six poses inspired by moments from student life.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="step-photo">
+                    <div class="step-photo__frame" data-number="02">
+                      <img src="../images/lil_gryphie/somernd.png" alt="The cartoon gryphon being modelled in Blender"
+                        loading="lazy">
+                    </div>
+
+                    <figcaption>
+                      <strong>Digital development</strong>
+                      Hunter's original models in blender.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="step-photo step-photo--tilted">
+                    <div class="step-photo__frame" data-number="03">
+                      <img src="../images/lil_gryphie/too_tiny.jpg" alt="An early 3D-printed prototype of the gryphon"
+                        loading="lazy">
+                    </div>
+
+                    <figcaption>
+                      <strong>Test printing</strong>
+                      This was our first print of just the body. It was much too small.
+                    </figcaption>
+                  </figure>
+                </div>
+                <p>
+                  Alongside this, I knew we needed some way to make them blind boxes. I drew my original vision in my
+                  mind and worked with the at the time VP Social, Rodney Malaa, to design a repeatable pattern tied to
+                  the lil guy.
+                </p>
+
+                <div class="step-gallery">
+                  <figure class="step-photo step-photo--wide">
+                    <div class="step-photo__frame" data-number="01">
+                      <img src="../images/lil_gryphie/boxsketch.png" alt="Sketch of original box Design">
+                    </div>
+
+                    <figcaption>
+                      <strong>Blind Box Concept</strong>
+                      Original blind box idea with proposed washi tape. It originally had a sticker of our logo on it.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="step-photo">
+                    <div class="step-photo__frame" data-number="02">
+                      <img src="../images/lil_gryphie/final_washi.png"
+                        alt="The cartoon gryphon being modelled in Blender" loading="lazy">
+                    </div>
+
+                    <figcaption>
+                      <strong>Refined Washi Tape</strong>
+                      Rodney made the washi tape better by making it cleaner and slicker.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="step-photo">
+                    <div class="step-photo__frame" data-number="03">
+                      <img src="../images/lil_gryphie/ogBox.jpg" alt="The original box" loading="lazy">
+                    </div>
+
+                    <figcaption>
+                      <strong>First Box Version</strong>
+                      This is the first boxes we had and sold. Recycled boxes painted black with mod podged washi tape
+                      glued on.
+                    </figcaption>
+                  </figure>
+
+                </div>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Build and test</h3>
+                <p> We ran a soft-launch sale to gauge crowd interest, test the ideal sale price, and run the
+                  development process from start to finish. It produced more revenue than any of our other fundraisers,
+                  which really surprised us. Many buyers said we should raise the price because they’d buy them at a
+                  higher price, which helped us, though it was funny that they shared that thought with us.
+                </p>
+                <p>The biggest thing I noticed was how long it took to set up the surprise boxes. Each box took 5
+                  minutes to paint and 3 minutes to tape (properly and nicely). </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Iterate</h3>
+                <p>After the soft launch, we increased the cost by one dollar. Several people said we could go higher,
+                  but since we’re selling to students on campus and all proceeds go to support fellow students, it
+                  didn’t feel right to raise the price further. It felt counterproductive to squeeze the same community
+                  we’re making the product for.
+                </p>
+                <p>
+                  A bigger change we implemented was the box setup. Ordering Black boxes costs 1/3 the price of a single
+                  gryphon, which cut our gains by a significant margin, so I didn’t want to do it. By chance, the team
+                  had recently acquired a Bambu H2D, and I realized its small cutting tool gave us the opportunity to
+                  design our own boxes. I had Jacob play around with the ideal box design, and he came back with what’s
+                  pictured below.
+                </p>
+                <p>
+                  The final workflow optimization change we implemented was getting actual washi tape. Since the tape on
+                  the boxes made the aesthetic, it seemed worth ordering custom washi tape, which cut out the 3 minutes
+                  spent gluing the box shut.
+                </p>
+                <p>For all future sales, this made our workflow so much better. The longest part of the process is
+                  gluing the boxes together, but it is much faster and more reliable than hand painting recycled boxes.
+                </p>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- OPTIONAL COMPONENT: Two-image gallery. Replace each placeholder with a figure/img. -->
+      <div class="media-grid" aria-label="Project image gallery">
+        <figure class="post-media">
+          <div class="media-placeholder media-placeholder--small" role="img" aria-label="Process image placeholder">
+            <span>A</span>
+            <strong>Process image</strong>
           </div>
+          <figcaption>EDIT: What should the reader notice?</figcaption>
+        </figure>
+        <figure class="post-media">
+          <div class="media-placeholder media-placeholder--small" role="img" aria-label="Result image placeholder">
+            <span>B</span>
+            <strong>Result image</strong>
+          </div>
+          <figcaption>EDIT: What changed between these images?</figcaption>
+        </figure>
+      </div>
 
-          <!-- EDIT: Main project title and short positioning statement. -->
-          <p class="post-type">case study / 01</p>
-          <h1>Using creativity to fundraise for the team.</h1>
-          <p class="post-deck">
-            Designed and lead the development of 3D printed toys (inspired by Simiski) to fundraise for the 
-            robotics team. All fundraising money goes to supporting students in attending competition.
+      <!-- OPTIONAL COMPONENT: Responsive YouTube/Vimeo embed. Replace src and title. -->
+      <figure class="post-media">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Project video" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>EDIT: Name the video and explain its relevance.</figcaption>
+      </figure>
+
+      <section class="post-section" id="outcome">
+        <div class="section-label">
+          <span>03</span>
+          <p>Outcome</p>
+        </div>
+        <div class="section-content">
+          <h2>What came out of it</h2>
+          <p class="lead">
+            State the result clearly. If the project was exploratory, the
+            result can be a finding, a working prototype, or a better model
+            of the problem.
           </p>
 
-          <ul class="tag-list" aria-label="Project tags">
-            <!-- EDIT: Duplicate or remove tags as needed. -->
-            <li>#Design</li>
-            <li>#Collaboration</li>
-            <li>#Process Optimization</li>
-          </ul>
-        </header>
-
-        <!-- OPTIONAL COMPONENT: Replace this placeholder with an image. -->
-        <figure class="post-media post-media--hero">
-          <div class="project-image">
-            
-            <img src="../images/lil_gryphie/squad.jpg" alt="Four Lil Gryphons in various poses">
-            <span class="project-image__number" aria-hidden="true">
-              01
-            </span>
-          </div>
-          <figcaption>A picture of some Lil Gryphies at GHD !</figcaption>
-        </figure>
-
-        <!-- COMPONENT: At-a-glance facts. Keep two to four items. -->
-        <dl class="fact-grid">
-          <div>
-            <dt>role</dt>
-            <dd>Designer and Lead</dd>
-          </div>
-          <div>
-            <dt>timeline</dt>
-            <dd>1.5 Years</dd>
-          </div>
-          <div>
-            <dt>tools</dt>
-            <dd>Collaboration · Design · Marketing</dd>
-          </div>
-          <div>
-            <dt>status</dt>
-            <dd>Complete (for me)</dd>
-          </div>
-        </dl>
-
-        <section class="post-section" id="overview">
-          <div class="section-label">
-            <span>01</span>
-            <p>Overview</p>
-          </div>
-          <div class="section-content">
-            <h2>Introducing Lil Gryphie</h2>
-            <!-- EDIT: Two or three short paragraphs are easier to scan than one long block. -->
-            <p class="lead">
-              After running a few bake sales, and seeing other clubs do the same, I wanted a robotics-special fundraiser that would create excitement on campus.
-            </p>
-            <p>
-              A Lil Gryphie is a 3D-printed gotcha box or blind box toy I designed to fundraise for my robotics team. All the money made goes to financially supporting students in attending competition. I want the team to feel accessible to everyone, so fundraising and sponsorships are among our top priorities.
-        Alongside being excited about the successful fundraiser, I’ve been having a lot of fun optimizing our development, toy creation, and packaging processes.
-            </p>
-          </div>
-        </section>
-
-        <!-- OPTIONAL COMPONENT: A highlighted research or design question. -->
-        <blockquote class="pull-quote">
-          <span>the question</span>
-          <p>“Write the central question or challenge in one memorable sentence.”</p>
-        </blockquote>
-
-        <section class="post-section" id="process">
-          <div class="section-label">
-            <span>02</span>
-            <p>Process</p>
-          </div>
-          <div class="section-content">
-            <h2>How I approached it</h2>
-
-            <!-- COMPONENT: Numbered process. Duplicate or remove steps. -->
-            <ol class="process-list">
-              <li>
-                <span>01</span>
-                <div>
-                  <h3>Understand</h3>
-                  <p>Describe the research, requirements, references, or initial diagnosis.</p>
-                </div>
-              </li>
-              <li>
-                <span>02</span>
-                <div>
-                  <h3>Build and test</h3>
-                  <p>Explain what you made and how you checked whether it worked.</p>
-                </div>
-              </li>
-              <li>
-                <span>03</span>
-                <div>
-                  <h3>Iterate</h3>
-                  <p>Show what changed after evidence, feedback, or failure.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <!-- OPTIONAL COMPONENT: Two-image gallery. Replace each placeholder with a figure/img. -->
-        <div class="media-grid" aria-label="Project image gallery">
-          <figure class="post-media">
-            <div class="media-placeholder media-placeholder--small" role="img" aria-label="Process image placeholder">
-              <span>A</span>
-              <strong>Process image</strong>
+          <!-- OPTIONAL COMPONENT: Result cards. -->
+          <div class="result-grid">
+            <div>
+              <strong>01</strong>
+              <span>Concrete result or metric</span>
             </div>
-            <figcaption>EDIT: What should the reader notice?</figcaption>
-          </figure>
-          <figure class="post-media">
-            <div class="media-placeholder media-placeholder--small" role="img" aria-label="Result image placeholder">
-              <span>B</span>
-              <strong>Result image</strong>
+            <div>
+              <strong>02</strong>
+              <span>Technical or creative outcome</span>
             </div>
-            <figcaption>EDIT: What changed between these images?</figcaption>
-          </figure>
+            <div>
+              <strong>03</strong>
+              <span>Lesson carried forward</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- OPTIONAL COMPONENT: Responsive YouTube/Vimeo embed. Replace src and title. -->
-        <figure class="post-media">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="Project video"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <figcaption>EDIT: Name the video and explain its relevance.</figcaption>
-        </figure>
+      <section class="post-section" id="reflection">
+        <div class="section-label">
+          <span>04</span>
+          <p>Reflection</p>
+        </div>
+        <div class="section-content">
+          <h2>What I would do differently</h2>
+          <p class="lead">
+            Be specific about one limitation, mistake, or trade-off. A good
+            reflection shows judgment, not self-punishment.
+          </p>
+          <p>
+            End by explaining the next experiment, skill, or decision this
+            project shaped.
+          </p>
+        </div>
+      </section>
 
-        <section class="post-section" id="outcome">
-          <div class="section-label">
-            <span>03</span>
-            <p>Outcome</p>
-          </div>
-          <div class="section-content">
-            <h2>What came out of it</h2>
-            <p class="lead">
-              State the result clearly. If the project was exploratory, the
-              result can be a finding, a working prototype, or a better model
-              of the problem.
-            </p>
+      <!-- OPTIONAL COMPONENT: Expandable technical details. -->
+      <details class="technical-note">
+        <summary>Technical notes / methodology</summary>
+        <div>
+          <p>
+            Put implementation details, parameters, references, or caveats
+            here so interested readers can go deeper without interrupting the
+            main story.
+          </p>
+        </div>
+      </details>
 
-            <!-- OPTIONAL COMPONENT: Result cards. -->
-            <div class="result-grid">
-              <div>
-                <strong>01</strong>
-                <span>Concrete result or metric</span>
-              </div>
-              <div>
-                <strong>02</strong>
-                <span>Technical or creative outcome</span>
-              </div>
-              <div>
-                <strong>03</strong>
-                <span>Lesson carried forward</span>
-              </div>
-            </div>
-          </div>
-        </section>
+      <footer class="post-footer">
+        <div class="post-footer__meta">
+          <span>posted Month 00, 20XX</span>
+          <span>last updated Month 00, 20XX</span>
+        </div>
+        <div class="post-footer__actions">
+          <button class="copy-link" type="button">
+            <span aria-hidden="true">↗</span>
+            <span>copy link</span>
+          </button>
+          <span aria-hidden="true">↻</span>
+          <span aria-hidden="true">♡</span>
+        </div>
+      </footer>
+    </article>
 
-        <section class="post-section" id="reflection">
-          <div class="section-label">
-            <span>04</span>
-            <p>Reflection</p>
-          </div>
-          <div class="section-content">
-            <h2>What I would do differently</h2>
-            <p class="lead">
-              Be specific about one limitation, mistake, or trade-off. A good
-              reflection shows judgment, not self-punishment.
-            </p>
-            <p>
-              End by explaining the next experiment, skill, or decision this
-              project shaped.
-            </p>
-          </div>
-        </section>
+    <!-- EDIT: Point these links to the adjacent project pages. -->
+    <nav class="project-pagination" aria-label="Other projects">
+      <a href="#">
+        <span>← previous project</span>
+        <strong>Previous project title</strong>
+      </a>
+      <a href="#">
+        <span>next project →</span>
+        <strong>Next project title</strong>
+      </a>
+    </nav>
+  </main>
+</body>
 
-        <!-- OPTIONAL COMPONENT: Expandable technical details. -->
-        <details class="technical-note">
-          <summary>Technical notes / methodology</summary>
-          <div>
-            <p>
-              Put implementation details, parameters, references, or caveats
-              here so interested readers can go deeper without interrupting the
-              main story.
-            </p>
-          </div>
-        </details>
-
-        <footer class="post-footer">
-          <div class="post-footer__meta">
-            <span>posted Month 00, 20XX</span>
-            <span>last updated Month 00, 20XX</span>
-          </div>
-          <div class="post-footer__actions">
-            <button class="copy-link" type="button">
-              <span aria-hidden="true">↗</span>
-              <span>copy link</span>
-            </button>
-            <span aria-hidden="true">↻</span>
-            <span aria-hidden="true">♡</span>
-          </div>
-        </footer>
-      </article>
-
-      <!-- EDIT: Point these links to the adjacent project pages. -->
-      <nav class="project-pagination" aria-label="Other projects">
-        <a href="#">
-          <span>← previous project</span>
-          <strong>Previous project title</strong>
-        </a>
-        <a href="#">
-          <span>next project →</span>
-          <strong>Next project title</strong>
-        </a>
-      </nav>
-    </main>
-  </body>
 </html>

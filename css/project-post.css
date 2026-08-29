@@ -437,7 +437,7 @@ img {
 
 .post-section {
   display: grid;
-  grid-template-columns: 95px minmax(0, 1fr);
+  grid-template-columns: 75px minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 3.5rem);
   padding: clamp(3.2rem, 8vw, 6.5rem) clamp(1.4rem, 5vw, 4.5rem);
   border-top: 1px solid var(--rule);
@@ -896,4 +896,112 @@ img {
 
   box-shadow: 4px 4px 0 var(--lime);
   transform: translate(-50%, 50%) rotate(3deg);
+}
+
+.process-step {
+  align-items: start;
+}
+
+.process-step__body {
+  min-width: 0;
+}
+
+.process-step__body > p {
+  max-width: 720px;
+  line-height: 1.75;
+}
+
+.step-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 1.5rem);
+  margin: 2rem 0 2.5rem;
+}
+
+.step-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.step-photo--wide {
+  grid-column: 1 / -1;
+}
+
+.step-photo__frame {
+  position: relative;
+  padding: 0.4rem;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+/* Image number overlay */
+.step-photo__frame::after {
+  content: attr(data-number);
+
+  position: absolute;
+  right: 1rem;
+  bottom: -0.75rem;
+  z-index: 2;
+
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+
+  background: var(--project-accent);
+  color: white;
+  font: 700 0.7rem "Courier New", monospace;
+
+  box-shadow: 4px 4px 0 var(--lime);
+  transform: rotate(3deg);
+}
+
+.step-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.step-photo--wide img {
+  aspect-ratio: 16 / 8;
+}
+
+.step-photo--tilted {
+  transform: rotate(1deg);
+}
+
+.step-photo figcaption {
+  margin: 1.1rem 0.35rem 0;
+  color: var(--soft-text);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.step-photo figcaption strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--text);
+  font: 700 0.62rem "Courier New", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+  .step-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .step-photo--wide {
+    grid-column: auto;
+  }
+
+  .step-photo--wide img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .step-photo--tilted {
+    transform: none;
+  }
 }
